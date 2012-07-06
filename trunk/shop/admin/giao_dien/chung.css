@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{
+	height: 100%;
+	overflow: hidden;
+}
+body {
+	background: #EBEBEB;
+	background-image: url('images/bg_main.png');
+	line-height: 1;
+	width: 100%;
+	height: 100%;	
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+}
+a{
+	color: #999;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+}
+ul{
+	list-style: none;
+}
+li{
+	list-style: none;
+}
+img
+{
+	border:0px solid red;
+}
+
+input
+{
+	border:1px solid #999999;
+	padding: 5px;
+	border-radius: 5px; 
+	
+}
+
+/*Menu*/
+.primary{
+	width: 200px;
+	height: 100%;
+	background: #464646;
+	float: left;
+	border-right: 1px solid #DFDFDF;
+	text-align: right;    
+}
+.nav li a{
+	text-decoration: none;	
+	display: block;
+	padding: 5px;
+	padding-right:10px;
+	color: white;
+}
+.nav li ul li:first-child{
+	margin-top:10px;
+}
+.nav li ul li:last-child{
+	margin-bottom:10px;
+}
+.nav li ul a:hover{
+	color: #30A4B1;
+}
+.nav li a.nav-top{	
+	padding: 5px;	
+	text-transform: uppercase;	
+	padding-right:10px;
+	background: #30A4B1;
+}
+
+/*Table*/
+.box{
+	background: #FAFAFA;	
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+	margin-bottom: 16px;
+	float: left;
+}
+.box-header{
+	background-color: #30A4B1;
+	height: 40px;
+}
+.box-header h1 {
+	color: white;
+	float: left;	
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 40px;
+	padding-left: 14px;	
+	text-transform: uppercase;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+thead {
+	color: #898989;
+	font-size: 13px;
+	font-weight: bold;
+}
+thead tr {
+	border-top: none;
+}
+table tr {
+	border-bottom: 1px solid #EBEBEB;
+}
+table tbody tr:last-child{
+	border-bottom: none;
+}
+tbody tr td, thead tr th {
+	padding: 12px 14px;
+	position: relative;
+	text-align: left;
+	vertical-align: middle;
+	border-left: 1px solid #EEE;
+}
+tbody tr td:first-child, thead tr th:first-child {
+	border-left: none;
+}
