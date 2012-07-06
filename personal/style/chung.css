@@ -1,0 +1,149 @@
+@font-face{font-family: NeoSansSTD;src: url('NeoSansStd-Regular.otf');}
+@font-face{font-family: NeoSansSTD;src: url('NeoSansStd-Medium.otf');font-weight: bold;}
+
+body
+{
+	margin:0;
+	padding:0;
+	font-family: 'NeoSansSTD', sans-serif;
+}
+form
+{
+	margin:0;
+	padding:0;
+}
+a
+{
+	text-decoration: none;
+	outline:0;
+	color: #777;
+}
+input
+{
+	border:1px solid #999999;
+}
+
+#header{			
+	min-width: 980px;		
+	position: fixed;
+	width: 100%;
+	background: url('bgr.png');
+	z-index: 80;
+	
+	height: 80px;	
+}
+#mainbody{	
+    position: relative;
+    top: 45px;
+}
+#logo{
+	position: fixed;
+	top: 5px;
+	left: 15px;
+}
+
+#menu{	
+	position: absolute;
+	font-size: 14px;
+	right: 0;
+	margin-right: 120px;
+	margin-top: 40px;
+}
+#footer{
+	font-size: 11px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 50;
+	width: 100%;
+	min-width: 980px;
+	height: 145px;
+	color: white;
+	background: url('bgr.png');
+	border-top: 3px solid #FD9600;
+}
+#scalecontainer{
+        -moz-transform-origin: left top;
+        -webkit-transform-origin: left top;
+        -ms-transform-origin: left top;
+        -o-transform-origin: left top;
+        transform-origin: left top;
+        width: 1024px;
+        margin: 0 auto;
+      }
+.bar{
+	position: absolute;
+	height: 5px;
+	background: url('../images/bar.png');
+	width: 100%;
+	top: 80px;
+}
+.mainItemBody{
+	position: fixed;
+	width: 800px;
+	overflow: auto;
+	background: #DAD9D7;
+}
+.bsqMainItem{		
+	float: left;
+}
+
+.detailItem{
+	position: fixed;	
+	z-index: 35;	
+	background: white;
+}
+
+
+.boxItem{
+	width: 800px;
+	float: left;
+	z-index: 35;
+}
+.outBoxItem{
+	width: 800px;
+	height: 470px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	position: fixed;
+	top: 85px;		
+}
+.fixedBackground{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: white;
+	
+	filter: alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	opacity: 0.5;
+}
+.bttClose{
+	background: gray;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 0px 15px 0 0px;
+	padding: 5px;
+	color: whiteSmoke;
+	cursor: pointer;
+}
+
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
