@@ -1,0 +1,128 @@
+body
+{
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+}
+form
+{
+	margin:0;
+	padding:0;
+}
+a
+{
+	text-decoration: none;
+	outline:0;
+	color: #777;
+}
+input
+{
+	border:1px solid #999999;
+}
+
+#header{			
+	min-width: 980px;		
+	position: fixed;
+	width: 100%;
+	background: white;
+	z-index: 80;
+	
+	-webkit-box-shadow: 0 0 10px rgba(85,85,85,0.2);
+	-moz-box-shadow: 0 0 10px rgba(85,85,85,0.2);
+	-ms-box-shadow: 0 0 10px rgba(85,85,85,0.2);
+	-o-box-shadow: 0 0 10px rgba(85,85,85,0.2);
+	box-shadow: 0 0 10px rgba(85,85,85,0.2);
+}
+#mainbody{	
+    position: relative;
+    top: 35px;
+}
+#logo{
+	position: fixed;
+	top: 5px;
+	left: 15px;
+}
+
+#menu{
+	margin-left: 10px;
+	font-size: 14px;
+}
+#footer{
+	font-size: 11px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 50;
+	width: 100%;
+	min-width: 980px;
+	height: 26px;
+	color: #666;
+	background: white;
+}
+
+.boxInfo{
+    font-size: 13px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 35;
+    width: 900px;
+    height: 420px;
+    background: white;
+    margin: -180px 0 0 -470px;
+    padding: 20px;
+    
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    -ms-box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    -o-box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+.mainItemBody{
+	position: fixed;
+	width: 800px;
+	overflow: auto;
+	background: #DAD9D7;
+}
+.bsqMainItem{		
+	float: left;
+}
+
+.detailItem{
+	position: fixed;	
+	z-index: 35;	
+	background: white;	
+	
+	-webkit-box-shadow: 0 0 100px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0 0 100px rgba(0,0,0,0.6);
+	-ms-box-shadow: 0 0 100px rgba(0,0,0,0.6);
+	-o-box-shadow: 0 0 100px rgba(0,0,0,0.6);
+	box-shadow: 0 0 100px rgba(0,0,0,0.6);
+}
+.boxContact{
+	position: fixed;	
+	z-index: 35;	
+	background: white;	
+	
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	-ms-box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	-o-box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);	
+	
+	padding: 20px;
+}
+
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}

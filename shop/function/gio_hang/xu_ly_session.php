@@ -1,0 +1,40 @@
+<?php 
+	chong_pha_hoai();
+?>
+<?php 
+	$so=count($_SESSION[$ten_danh_dau__kkk.'id_giohang']);
+	if($so!=0)
+	{
+		$trung_lap="khong";
+		for($r=0;$r<$so;$r++)
+		{
+			$id_r=$_SESSION[$ten_danh_dau__kkk.'id_giohang'][$r];
+			if($id_r==$_GET['id_sp__nnn'])
+			{
+				$trung_lap="co";
+				$_SESSION[$ten_danh_dau__kkk.'sl_abc'][$r]=$_SESSION[$ten_danh_dau__kkk.'sl_abc'][$r]+$_GET['so_luong__nnn'];	
+				break;
+			}
+		}
+		if($trung_lap=="khong")
+		{
+			$_SESSION[$ten_danh_dau__kkk.'id_giohang'][$so]=$_GET['id_sp__nnn'];
+			$_SESSION[$ten_danh_dau__kkk.'sl_abc'][$so]=$_GET['so_luong__nnn'];
+		}
+	}
+	else 
+	{
+		$_SESSION[$ten_danh_dau__kkk.'id_giohang'][0]=$_GET['id_sp__nnn'];
+		$_SESSION[$ten_danh_dau__kkk.'sl_abc'][0]=$_GET['so_luong__nnn'];
+	}
+	$trinh_duyet_ie=trinh_duyet_ie();
+	if($trinh_duyet_ie=="khong")
+	{
+		chuyentrang("?thamso=gio_hang");
+		trangtruoc();
+		exit();
+	}
+	$_SESSION[$ten_danh_dau."fix_ie_button_back__abc"]="co";
+	trangtruoc();
+	exit();
+?>
